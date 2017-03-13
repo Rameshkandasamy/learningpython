@@ -1,0 +1,607 @@
+PyDev console: starting.
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)] on win32
+>>> a = 100
+>>> dir(a)
+['__abs__', '__add__', '__and__', '__class__', '__cmp__', '__coerce__', '__delattr__', '__div__', '__divmod__', '__doc__', '__float__', '__floordiv__', '__format__', '__getattribute__', '__getnewargs__', '__hash__', '__hex__', '__index__', '__init__', '__int__', '__invert__', '__long__', '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 'real']
+>>> a.imag
+0
+>>> a.conjugate()
+100
+>>> type(a)
+<type 'int'>
+>>> import os
+>>> os.getcwd()
+'C:\\Users\\rameskan\\PycharmProjects\\LearningPython'
+>>> dir(os)
+['F_OK', 'O_APPEND', 'O_BINARY', 'O_CREAT', 'O_EXCL', 'O_NOINHERIT', 'O_RANDOM', 'O_RDONLY', 'O_RDWR', 'O_SEQUENTIAL', 'O_SHORT_LIVED', 'O_TEMPORARY', 'O_TEXT', 'O_TRUNC', 'O_WRONLY', 'P_DETACH', 'P_NOWAIT', 'P_NOWAITO', 'P_OVERLAY', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'TMP_MAX', 'UserDict', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '_copy_reg', '_execvpe', '_exists', '_exit', '_get_exports_list', '_make_stat_result', '_make_statvfs_result', '_pickle_stat_result', '_pickle_statvfs_result', 'abort', 'access', 'altsep', 'chdir', 'chmod', 'close', 'closerange', 'curdir', 'defpath', 'devnull', 'dup', 'dup2', 'environ', 'errno', 'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fdopen', 'fstat', 'fsync', 'getcwd', 'getcwdu', 'getenv', 'getpid', 'isatty', 'kill', 'linesep', 'listdir', 'lseek', 'lstat', 'makedirs', 'mkdir', 'name', 'open', 'pardir', 'path', 'pathsep', 'pipe', 'popen', 'popen2', 'popen3', 'popen4', 'putenv', 'read', 'remove', 'removedirs', 'rename', 'renames', 'rmdir', 'sep', 'spawnl', 'spawnle', 'spawnv', 'spawnve', 'startfile', 'stat', 'stat_float_times', 'stat_result', 'statvfs_result', 'strerror', 'sys', 'system', 'tempnam', 'times', 'tmpfile', 'tmpnam', 'umask', 'unlink', 'unsetenv', 'urandom', 'utime', 'waitpid', 'walk', 'write']
+>>> os.getcwd()
+'C:\\Users\\rameskan\\PycharmProjects\\LearningPython'
+>>> os.listdir()
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: listdir() takes exactly 1 argument (0 given)
+>>> os.listdir(".")
+['.idea', 'Conditionsandloops', 'FirstSteps']
+>>> f = open("FirstSteps")
+>>> dir(f)
+['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'closed', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'mode', 'name', 'newlines', 'next', 'read', 'readinto', 'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 'writelines', 'xreadlines']
+>>> for elem in f:
+...     print elem
+...     
+###__author__ = "ramesh"
+
+###print "hello world";
+
+import math;
+
+from math import factorial;
+
+i = 11;
+
+
+
+###print i**3**3;
+
+
+
+print factorial(i*3)/factorial(i*2);
+
+
+
+###help math;
+
+
+
+##print 'hello world';
+
+
+
+###print '''wassup buddy how are you doing today'''
+
+
+
+a = '20 ';
+
+
+
+b = "his age is";
+
+
+
+##print 'When playing with the python, {1}, {0}'.format(a,b);
+
+
+
+
+
+##print '{1:.4f}'.format(1.0/3, 11/3);
+
+
+
+
+
+##print '{0:*^11}'.format('hello')
+
+
+
+##print('this is the first line \nthis is the second line with an escape character \'');
+
+
+
+##print "This is a raw string \n wassup"
+
+##print r"This is a raw string \n wassup";
+
+
+
+###name = raw_input("Enter Name: ")
+
+###print 'The name is ' + name;
+
+
+
+
+
+>>> for elem in f:
+...     if (elem.__contains__("hello")):
+...         print elem
+...         
+>>> 
+>>> f = open("FirstSteps")
+>>> for elem in f:
+...     if (elem.__contains__("hello")):
+...         print elem
+...         
+###print "hello world";
+
+##print 'hello world';
+
+##print '{0:*^11}'.format('hello')
+
+>>> a = "str"
+>>> dir(a)
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_formatter_field_name_split', '_formatter_parser', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> string = "abc def xyz pqr mno uvw"
+>>> splitString = string.split(" ")
+>>> type(splitString)
+<type 'list'>
+>>> splitString
+['abc', 'def', 'xyz', 'pqr', 'mno', 'uvw']
+>>> string.search("abc")
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'search'
+>>> string.find("abc")
+0
+>>> string
+'abc def xyz pqr mno uvw'
+>>> string.find("^abc$")
+-1
+>>> string.find('abc')
+0
+>>> help(string.find())
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: find/rfind/index/rindex() takes at least 1 argument (0 given)
+>>> help(str)
+Help on class str in module __builtin__:
+
+class str(basestring)
+ |  str(object='') -> string
+ |  
+ |  Return a nice string representation of the object.
+ |  If the argument is a string, the return value is the same object.
+ |  
+ |  Method resolution order:
+ |      str
+ |      basestring
+ |      object
+ |  
+ |  Methods defined here:
+ |  
+ |  __add__(...)
+ |      x.__add__(y) <==> x+y
+ |  
+ |  __contains__(...)
+ |      x.__contains__(y) <==> y in x
+ |  
+ |  __eq__(...)
+ |      x.__eq__(y) <==> x==y
+ |  
+ |  __format__(...)
+ |      S.__format__(format_spec) -> string
+ |      
+ |      Return a formatted version of S as described by format_spec.
+ |  
+ |  __ge__(...)
+ |      x.__ge__(y) <==> x>=y
+ |  
+ |  __getattribute__(...)
+ |      x.__getattribute__('name') <==> x.name
+ |  
+ |  __getitem__(...)
+ |      x.__getitem__(y) <==> x[y]
+ |  
+ |  __getnewargs__(...)
+ |  
+ |  __getslice__(...)
+ |      x.__getslice__(i, j) <==> x[i:j]
+ |      
+ |      Use of negative indices is not supported.
+ |  
+ |  __gt__(...)
+ |      x.__gt__(y) <==> x>y
+ |  
+ |  __hash__(...)
+ |      x.__hash__() <==> hash(x)
+ |  
+ |  __le__(...)
+ |      x.__le__(y) <==> x<=y
+ |  
+ |  __len__(...)
+ |      x.__len__() <==> len(x)
+ |  
+ |  __lt__(...)
+ |      x.__lt__(y) <==> x<y
+ |  
+ |  __mod__(...)
+ |      x.__mod__(y) <==> x%y
+ |  
+ |  __mul__(...)
+ |      x.__mul__(n) <==> x*n
+ |  
+ |  __ne__(...)
+ |      x.__ne__(y) <==> x!=y
+ |  
+ |  __repr__(...)
+ |      x.__repr__() <==> repr(x)
+ |  
+ |  __rmod__(...)
+ |      x.__rmod__(y) <==> y%x
+ |  
+ |  __rmul__(...)
+ |      x.__rmul__(n) <==> n*x
+ |  
+ |  __sizeof__(...)
+ |      S.__sizeof__() -> size of S in memory, in bytes
+ |  
+ |  __str__(...)
+ |      x.__str__() <==> str(x)
+ |  
+ |  capitalize(...)
+ |      S.capitalize() -> string
+ |      
+ |      Return a copy of the string S with only its first character
+ |      capitalized.
+ |  
+ |  center(...)
+ |      S.center(width[, fillchar]) -> string
+ |      
+ |      Return S centered in a string of length width. Padding is
+ |      done using the specified fill character (default is a space)
+ |  
+ |  count(...)
+ |      S.count(sub[, start[, end]]) -> int
+ |      
+ |      Return the number of non-overlapping occurrences of substring sub in
+ |      string S[start:end].  Optional arguments start and end are interpreted
+ |      as in slice notation.
+ |  
+ |  decode(...)
+ |      S.decode([encoding[,errors]]) -> object
+ |      
+ |      Decodes S using the codec registered for encoding. encoding defaults
+ |      to the default encoding. errors may be given to set a different error
+ |      handling scheme. Default is 'strict' meaning that encoding errors raise
+ |      a UnicodeDecodeError. Other possible values are 'ignore' and 'replace'
+ |      as well as any other name registered with codecs.register_error that is
+ |      able to handle UnicodeDecodeErrors.
+ |  
+ |  encode(...)
+ |      S.encode([encoding[,errors]]) -> object
+ |      
+ |      Encodes S using the codec registered for encoding. encoding defaults
+ |      to the default encoding. errors may be given to set a different error
+ |      handling scheme. Default is 'strict' meaning that encoding errors raise
+ |      a UnicodeEncodeError. Other possible values are 'ignore', 'replace' and
+ |      'xmlcharrefreplace' as well as any other name registered with
+ |      codecs.register_error that is able to handle UnicodeEncodeErrors.
+ |  
+ |  endswith(...)
+ |      S.endswith(suffix[, start[, end]]) -> bool
+ |      
+ |      Return True if S ends with the specified suffix, False otherwise.
+ |      With optional start, test S beginning at that position.
+ |      With optional end, stop comparing S at that position.
+ |      suffix can also be a tuple of strings to try.
+ |  
+ |  expandtabs(...)
+ |      S.expandtabs([tabsize]) -> string
+ |      
+ |      Return a copy of S where all tab characters are expanded using spaces.
+ |      If tabsize is not given, a tab size of 8 characters is assumed.
+ |  
+ |  find(...)
+ |      S.find(sub [,start [,end]]) -> int
+ |      
+ |      Return the lowest index in S where substring sub is found,
+ |      such that sub is contained within S[start:end].  Optional
+ |      arguments start and end are interpreted as in slice notation.
+ |      
+ |      Return -1 on failure.
+ |  
+ |  format(...)
+ |      S.format(*args, **kwargs) -> string
+ |      
+ |      Return a formatted version of S, using substitutions from args and kwargs.
+ |      The substitutions are identified by braces ('{' and '}').
+ |  
+ |  index(...)
+ |      S.index(sub [,start [,end]]) -> int
+ |      
+ |      Like S.find() but raise ValueError when the substring is not found.
+ |  
+ |  isalnum(...)
+ |      S.isalnum() -> bool
+ |      
+ |      Return True if all characters in S are alphanumeric
+ |      and there is at least one character in S, False otherwise.
+ |  
+ |  isalpha(...)
+ |      S.isalpha() -> bool
+ |      
+ |      Return True if all characters in S are alphabetic
+ |      and there is at least one character in S, False otherwise.
+ |  
+ |  isdigit(...)
+ |      S.isdigit() -> bool
+ |      
+ |      Return True if all characters in S are digits
+ |      and there is at least one character in S, False otherwise.
+ |  
+ |  islower(...)
+ |      S.islower() -> bool
+ |      
+ |      Return True if all cased characters in S are lowercase and there is
+ |      at least one cased character in S, False otherwise.
+ |  
+ |  isspace(...)
+ |      S.isspace() -> bool
+ |      
+ |      Return True if all characters in S are whitespace
+ |      and there is at least one character in S, False otherwise.
+ |  
+ |  istitle(...)
+ |      S.istitle() -> bool
+ |      
+ |      Return True if S is a titlecased string and there is at least one
+ |      character in S, i.e. uppercase characters may only follow uncased
+ |      characters and lowercase characters only cased ones. Return False
+ |      otherwise.
+ |  
+ |  isupper(...)
+ |      S.isupper() -> bool
+ |      
+ |      Return True if all cased characters in S are uppercase and there is
+ |      at least one cased character in S, False otherwise.
+ |  
+ |  join(...)
+ |      S.join(iterable) -> string
+ |      
+ |      Return a string which is the concatenation of the strings in the
+ |      iterable.  The separator between elements is S.
+ |  
+ |  ljust(...)
+ |      S.ljust(width[, fillchar]) -> string
+ |      
+ |      Return S left-justified in a string of length width. Padding is
+ |      done using the specified fill character (default is a space).
+ |  
+ |  lower(...)
+ |      S.lower() -> string
+ |      
+ |      Return a copy of the string S converted to lowercase.
+ |  
+ |  lstrip(...)
+ |      S.lstrip([chars]) -> string or unicode
+ |      
+ |      Return a copy of the string S with leading whitespace removed.
+ |      If chars is given and not None, remove characters in chars instead.
+ |      If chars is unicode, S will be converted to unicode before stripping
+ |  
+ |  partition(...)
+ |      S.partition(sep) -> (head, sep, tail)
+ |      
+ |      Search for the separator sep in S, and return the part before it,
+ |      the separator itself, and the part after it.  If the separator is not
+ |      found, return S and two empty strings.
+ |  
+ |  replace(...)
+ |      S.replace(old, new[, count]) -> string
+ |      
+ |      Return a copy of string S with all occurrences of substring
+ |      old replaced by new.  If the optional argument count is
+ |      given, only the first count occurrences are replaced.
+ |  
+ |  rfind(...)
+ |      S.rfind(sub [,start [,end]]) -> int
+ |      
+ |      Return the highest index in S where substring sub is found,
+ |      such that sub is contained within S[start:end].  Optional
+ |      arguments start and end are interpreted as in slice notation.
+ |      
+ |      Return -1 on failure.
+ |  
+ |  rindex(...)
+ |      S.rindex(sub [,start [,end]]) -> int
+ |      
+ |      Like S.rfind() but raise ValueError when the substring is not found.
+ |  
+ |  rjust(...)
+ |      S.rjust(width[, fillchar]) -> string
+ |      
+ |      Return S right-justified in a string of length width. Padding is
+ |      done using the specified fill character (default is a space)
+ |  
+ |  rpartition(...)
+ |      S.rpartition(sep) -> (head, sep, tail)
+ |      
+ |      Search for the separator sep in S, starting at the end of S, and return
+ |      the part before it, the separator itself, and the part after it.  If the
+ |      separator is not found, return two empty strings and S.
+ |  
+ |  rsplit(...)
+ |      S.rsplit([sep [,maxsplit]]) -> list of strings
+ |      
+ |      Return a list of the words in the string S, using sep as the
+ |      delimiter string, starting at the end of the string and working
+ |      to the front.  If maxsplit is given, at most maxsplit splits are
+ |      done. If sep is not specified or is None, any whitespace string
+ |      is a separator.
+ |  
+ |  rstrip(...)
+ |      S.rstrip([chars]) -> string or unicode
+ |      
+ |      Return a copy of the string S with trailing whitespace removed.
+ |      If chars is given and not None, remove characters in chars instead.
+ |      If chars is unicode, S will be converted to unicode before stripping
+ |  
+ |  split(...)
+ |      S.split([sep [,maxsplit]]) -> list of strings
+ |      
+ |      Return a list of the words in the string S, using sep as the
+ |      delimiter string.  If maxsplit is given, at most maxsplit
+ |      splits are done. If sep is not specified or is None, any
+ |      whitespace string is a separator and empty strings are removed
+ |      from the result.
+ |  
+ |  splitlines(...)
+ |      S.splitlines(keepends=False) -> list of strings
+ |      
+ |      Return a list of the lines in S, breaking at line boundaries.
+ |      Line breaks are not included in the resulting list unless keepends
+ |      is given and true.
+ |  
+ |  startswith(...)
+ |      S.startswith(prefix[, start[, end]]) -> bool
+ |      
+ |      Return True if S starts with the specified prefix, False otherwise.
+ |      With optional start, test S beginning at that position.
+ |      With optional end, stop comparing S at that position.
+ |      prefix can also be a tuple of strings to try.
+ |  
+ |  strip(...)
+ |      S.strip([chars]) -> string or unicode
+ |      
+ |      Return a copy of the string S with leading and trailing
+ |      whitespace removed.
+ |      If chars is given and not None, remove characters in chars instead.
+ |      If chars is unicode, S will be converted to unicode before stripping
+ |  
+ |  swapcase(...)
+ |      S.swapcase() -> string
+ |      
+ |      Return a copy of the string S with uppercase characters
+ |      converted to lowercase and vice versa.
+ |  
+ |  title(...)
+ |      S.title() -> string
+ |      
+ |      Return a titlecased version of S, i.e. words start with uppercase
+ |      characters, all remaining cased characters have lowercase.
+ |  
+ |  translate(...)
+ |      S.translate(table [,deletechars]) -> string
+ |      
+ |      Return a copy of the string S, where all characters occurring
+ |      in the optional argument deletechars are removed, and the
+ |      remaining characters have been mapped through the given
+ |      translation table, which must be a string of length 256 or None.
+ |      If the table argument is None, no translation is applied and
+ |      the operation simply removes the characters in deletechars.
+ |  
+ |  upper(...)
+ |      S.upper() -> string
+ |      
+ |      Return a copy of the string S converted to uppercase.
+ |  
+ |  zfill(...)
+ |      S.zfill(width) -> string
+ |      
+ |      Pad a numeric string S with zeros on the left, to fill a field
+ |      of the specified width.  The string S is never truncated.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __new__ = <built-in method __new__ of type object>
+ |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+
+>>> string.find("xyz")
+8
+>>> string
+'abc def xyz pqr mno uvw'
+>>> line = "                 asf";
+>>> line.strip()
+'asf'
+>>> f = open("my.csv")
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+IOError: [Errno 2] No such file or directory: 'my.csv'
+>>> help(open)
+Help on built-in function open in module __builtin__:
+
+open(...)
+    open(name[, mode[, buffering]]) -> file object
+    
+    Open a file using the file() type, returns a file object.  This is the
+    preferred way to open a file.  See file.__doc__ for further information.
+
+>>> f = open("my.csv", w)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+NameError: name 'w' is not defined
+>>> f = open("my.csv", 'w')
+>>> numberString = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+>>> f.write(numberString)
+>>> f.close()
+>>> f.open("my.csv")
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+AttributeError: 'file' object has no attribute 'open'
+>>> f= open("my.csv")
+>>> dir(f)
+['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'closed', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'mode', 'name', 'newlines', 'next', 'read', 'readinto', 'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 'writelines', 'xreadlines']
+>>> line = f.read()
+>>> line
+'1, 2, 3, 4, 5, 6, 7, 8, 9, 10'
+>>> extractedNumbers = line.split(",")
+>>> extractedNumbers
+['1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', ' 10']
+>>> result = 0
+>>> for number in extractedNumbers:
+...     strippedNum = number.strip()
+...     result = result + int(strippedNum)
+...     
+>>> result
+55
+>>> f = open("revenue_file")
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+IOError: [Errno 2] No such file or directory: 'revenue_file'
+>>> f = open("revenue_file", 'w')
+>>> f.write("cisco 1000 200 100")
+>>> f.write("goog 20000 300 300")
+>>> f.write("fb 30000 200 100")
+>>> f.close()
+>>> for line in f:
+...     (company, revenue, opex, misc) = line.split(" ")
+...     profit = int(revenue) - int(opex) - int(misc)
+...     print "Company = " + company + " profit = " + str(profit)
+...     
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: I/O operation on closed file
+>>> f = open("revenue_file")
+>>> for line in f:
+...     (company, revenue, opex, misc) = line.split(" ")
+...     profit = int(revenue) - int(opex) - int(misc)
+...     print "Company = " + company + " profit = " + str(profit)
+...     
+Company = cisco profit = 700
+Company = goog profit = 19400
+Company = fb profit = 29700
+>>> f.close()
+>>> f = open("revenue_file")
+>>> line = f.read()
+>>> (company, revenue, opex, misc) = line.split(" ")
+... 
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+ValueError: too many values to unpack
+>>> line
+'cisco 1000 200 100\ngoog 20000 300 300\nfb 30000 200 100\n'
+>>> f = open("revenue_file")
+>>> line = f.readline()
+>>> line
+'cisco 1000 200 100\n'
+>>> (company, revenue, opex, misc) = line.split(" ")
+... 
+>>> company
+'cisco'
+>>> revenue
+'1000'
+>>> open
+<built-in function open>
+>>> opex
+'200'
+>>> misc
+'100\n'
+>>> line = f.readline()
+>>> line
+'goog 20000 300 300\n'
+>>> result = line.split()
+>>> type(result)
+<type 'list'>
+>>> result[0]
+'goog'

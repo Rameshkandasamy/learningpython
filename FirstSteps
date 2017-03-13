@@ -1,0 +1,37 @@
+###__author__ = "ramesh"
+###print "hello world";
+import math;
+from math import factorial;
+i = 11;
+
+###print i**3**3;
+
+print factorial(i*3)/factorial(i*2);
+
+###help math;
+
+##print 'hello world';
+
+###print '''wassup buddy how are you doing today'''
+
+a = '20 ';
+
+b = "his age is";
+
+##print 'When playing with the python, {1}, {0}'.format(a,b);
+
+
+##print '{1:.4f}'.format(1.0/3, 11/3);
+
+
+##print '{0:*^11}'.format('hello')
+
+##print('this is the first line \nthis is the second line with an escape character \'');
+
+##print "This is a raw string \n wassup"
+##print r"This is a raw string \n wassup";
+
+###name = raw_input("Enter Name: ")
+###print 'The name is ' + name;
+
+

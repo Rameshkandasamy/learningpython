@@ -1,0 +1,44 @@
+##h = raw_input("Enter a number");
+'''h = 0;
+if h == 10:
+    print "h is 10";
+elif h < 10:
+    print "h is less than 10";
+elif h > 10:
+    print "h is greater than 10";
+
+print 2>>6;
+
+    number = 23;
+    guess = raw_input("Enter your number");
+
+    if int(guess) == int(number):
+        print "your guess {0} is right".format(guess);
+    elif int(guess) < int(number):
+        print "your guess {0} should be higher".format(guess);
+    elif int(guess) > int(number):
+        print "your guess {0} should be lower".format(guess);
+
+    print "done and dusted!";
+
+    number = 26
+running = True
+
+while running:
+    guess = int(raw_input("Enter a number to guess"))
+
+    if guess == int(number):
+        print "You have the number!";
+        running = False;
+    elif guess < int(number):
+        print "Step up!";
+    elif guess > int(number):
+        print "Step down...";
+print "done!";
+'''
+
+for i in range(0, 10,3):
+ print i;
+
+
+
