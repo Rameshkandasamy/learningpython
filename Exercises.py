@@ -75,8 +75,31 @@ def isPalindrome(input):
 print isPalindrome("malayalam")
 print isPalindrome("xoxoxo")
 
-'''
+a = str(raw_input("Enter your string for palindrome check: "))
+b = ''
 
+for i in range(0,(len(a))):
+    b += a[len(a) -i -1]
+if a == b:
+    print ("You have a palindrome string!")
+else:
+    print ("No beans!")
+def isPalindrome(input):
+    #inputStr = (str) input
+    reversedInput = input[::-1]
+    return input == reversedInput
+
+#print isPalindrome("malayalam sis malayalam")
+#print isPalindrome("xoxoxox")
+
+a = str(raw_input("Enter your string to reverse order: "));
+b = a.split();
+
+c = list(reversed(b));
+
+c = ' '.join(c);
+
+print c;
 
 
 #7 print only evens in a list.
@@ -90,4 +113,57 @@ print b
 c = [number for number in a if number%2 == 0]
 
 print c
+
+#Fibonacci
+def gen_fib():
+    count = int(input("How many fibonacci numbers would you like to generate? "))
+    i = 1
+    if count == 0:
+        fib = []
+    elif count == 1:
+        fib = [1]
+    elif count == 2:
+        fib = [1,1]
+    elif count > 2:
+        fib = [1,1]
+        while i < (count - 1):
+            fib.append(fib[i] + fib[i-1])
+            i += 1
+
+    return fib
+
+print gen_fib()
+
+#Check Primality
+enternumber = int(raw_input("Enter a number for pimality Check:"))
+
+primecount = 1
+
+for i in range(2,enternumber-1):
+    if enternumber % i == 0:
+        primecount = primecount + enternumber
+
+if primecount <= 1:
+    print ("You have a prime number")
+else:
+    print("Number is not prime")
+
+#return first and last
+y = []
+    for i in range(len(x)):
+        if i == 0  or  i == len(x) -1 :
+            y.append(x[i])
+    return y
+
+#a_list = ["a","e","i","o","u"]
+
+a_list = [1,3,4,5,6,6,7,8,8,9,9,1]
+
+def firstlast(a_list):
+    return [a_list[0], a_list[len(a_list)-1]]
+
+print firstlast(a_list)
+
+
+'''
 
